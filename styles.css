@@ -11,6 +11,13 @@ body {
   color: #2b1e16;
 }
 
+a {
+  color: #b2541e;
+}
+a:hover {
+  text-decoration: none;
+}
+
 h1, p {
   margin: 0 auto;
   max-width: 500px;
