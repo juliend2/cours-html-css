@@ -4,7 +4,7 @@
 body {
   font-family: 'Alegreya Sans';
   font-size: 10px;
-  padding: 20px;
+  margin: 0;
   padding-top: 10vh;
   padding-bottom: 10vh;
   background-color: FloralWhite;
@@ -41,6 +41,20 @@ p {
   text-align: justify;
 }
 
+blockquote {
+  background: white;
+  padding: 10px;
+  margin: 0;
+  margin-bottom: 1em;
+  color: #89766b;
+}
+blockquote p {
+  text-indent: 20px;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
 .premier-paragraphe::first-line {
   font-family: 'Alegreya Sans SC', serif;
   letter-spacing: 1px;
@@ -62,9 +76,13 @@ p {
 }
 
 .portrait {
-  width: auto;
-  height: 50%;
+  width: 300px;
+  height: auto;
   display: block;
   margin: 0 auto;
   border: 4px double #d86f31;
+}
+
+.dimmed {
+  color: #89766b;
 }
