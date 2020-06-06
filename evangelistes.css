@@ -1,20 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Caudex&family=Alegreya+Sans&family=Alegreya+Sans+SC&family=Uncial+Antiqua&display=swap');
 
-
 body {
-  font-family: 'Alegreya Sans';
   font-size: 10px;
+  background-color: FloralWhite;
+  font-family: 'Alegreya Sans', sans-serif;
   margin: 0;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  background-color: FloralWhite;
   color: #2b1e16;
 }
 
 a {
   color: #b2541e;
 }
-
 a:hover {
   text-decoration: none;
 }
@@ -25,20 +23,19 @@ h1, p {
 }
 
 h1 {
+  font-size: 75px;
   font-family: 'Caudex', serif;
   font-weight: normal;
-  font-size: 75px;
   text-align: center;
-  line-height: 1.5em;
-  margin-bottom: 1.5rem;
   color: #b2541e;
-  border-bottom: 1px solid #d86f31;
+  border-bottom: 1px solid #d85f31;
+  margin-bottom: 1.5rem;
 }
 
 p {
-  line-height: 1.4em;
-  margin-bottom: 1em;
   font-size: 1.6em;
+  margin-bottom: 1em;
+  line-height: 1.4em;
   text-align: justify;
 }
 
@@ -49,6 +46,18 @@ blockquote {
   margin-bottom: 1em;
   color: #89766b;
 }
+blockquote p:first-child::before,
+blockquote p:nth-last-child(2)::after {
+  font-size: 3em;
+  text-indent: -20px;
+  color: #ddd;
+}
+blockquote p:first-child::before {
+  content: '«';
+}
+blockquote p:nth-last-child(2)::after {
+  content: '»';
+}
 blockquote p {
   text-indent: 20px;
 }
@@ -56,20 +65,21 @@ blockquote p:last-child {
   margin-bottom: 0;
 }
 
+.premier-paragraphe {
+  font-size: 1.8em;
+}
+
 .premier-paragraphe::first-line {
   font-family: 'Alegreya Sans SC', serif;
   letter-spacing: 1px;
 }
 
-.lettrine,
 .premier-paragraphe::first-letter {
   font-family: 'Uncial Antiqua', serif;
   font-size: 40px;
   line-height: 1em;
-
   color: FloralWhite;
   background: #c45515;
-
   border: 3px double FloralWhite;
   padding: 8px;
   float: left;
